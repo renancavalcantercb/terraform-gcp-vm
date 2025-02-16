@@ -10,7 +10,7 @@ resource "google_compute_instance" "vm_instance" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-minimal-2004-lts"
+      image = "ubuntu-minimal-2204-lts"
     }
   }
 
