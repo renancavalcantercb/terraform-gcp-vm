@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "my-docker-vm"
+  name         = var.vm_name
   machine_type = "e2-micro"
   zone         = var.region
 
@@ -23,4 +23,3 @@ resource "google_compute_instance" "vm_instance" {
 
   tags = ["http-server", "https-server"]
 }
-
