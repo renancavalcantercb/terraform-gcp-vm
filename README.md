@@ -36,10 +36,13 @@ Authenticate your Terraform environment with GCP:
 ### 2. Set Up Terraform Variables
 
  1. Copy the terraform.tfvars.example file to terraform.tfvars:
+
 	```sh
 	cp terraform.tfvars.example terraform.tfvars
 	```
+
  2. Open the `terraform.tfvars` file and replace the placeholders with your actual values:
+ 
 	```
 	project_id = "project-id-12345"
 	vm_name    = "my-vm-name"
